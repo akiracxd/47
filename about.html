@@ -1,11 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Военный округ | О нас</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russia&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHptMCA0NDhjLTExMC41IDAtMjAwLTg5LjUtMjAwLTIwMFMxNDUuNSA1NiAyNTYgNTZzMjAwIDg5LjUgMjAwIDIwMC04OS41IDIwMC0yMDAgMjAwem0xMTEuOC0zMTguOUwtMjQ2IDM5Ni44bC0yMi4yLTIyLjIgMTU0LjItMTU0LjIgMTU0LjIgMTU0LjItMjIuMiAyMi4yLTkzLjYtOTMuNnoiLz48L3N2Zz4=" alt="Логотип">
+                    <span>Военный округ</span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="about.html" class="nav__link active">О нас</a>
+                    <a href="services.html" class="nav__link">Услуги</a>
+                    <a href="news.html" class="nav__link">Новости</a>
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                </nav>
+                <button class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">О Челябинском Военном Округе</h2>
+                <div class="about__content">
+                    <div class="about__image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiPkltYWdlIHBsYWNlaG9sZGVyPC90ZXh0Pjwvc3ZnPg==" alt="О нас">
+                    </div>
+                    <div class="about__text">
+                        <p>Челябинский Военный Округ - это современное оборонительное формирование, созданное в 2025 году для защиты южноуральского региона.</p>
+                        <p>Наша миссия - обеспечение безопасности граждан и территориальной целостности Российской Федерации на вверенной территории.</p>
+                        <button class="btn about__btn" data-modal="history-modal">История создания</button>
+                    </div>
+                </div>
+
+                <div class="command">
+                    <h3 class="command__title">Командование округа</h3>
+                    <div class="command__grid">
+                        <div class="command-card">
+                            <div class="command-card__image">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiPkNvbW1hbmRlcjwvdGV4dD48L3N2Zz4=" alt="Командир">
+                            </div>
+                            <h4 class="command-card__name">Генерал-лейтенант Иванов А.В.</h4>
+                            <p class="command-card__position">Командующий округом</p>
+                            <button class="btn command-card__btn" data-modal="commander-modal">Биография</button>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-card__image">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiPkRlcHV0eTwvdGV4dD48L3N2Zz4=" alt="Зам. командира">
+                            </div>
+                            <h4 class="command-card__name">Генерал-майор Петров С.И.</h4>
+                            <p class="command-card__position">Заместитель командующего</p>
+                            <button class="btn command-card__btn" data-modal="deputy-modal">Биография</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <h4 class="footer__title">Военный округ</h4>
+                    <p class="footer__text">Челябинск, 2025</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Контакты</h4>
+                    <p class="footer__text">+7 (351) 123-45-67</p>
+                    <p class="footer__text">info@voenokrug.ru</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Навигация</h4>
+                    <a href="index.html" class="footer__link">Главная</a>
+                    <a href="about.html" class="footer__link">О нас</a>
+                    <a href="services.html" class="footer__link">Услуги</a>
+                    <a href="news.html" class="footer__link">Новости</a>
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                © 2025 Челябинский Военный Округ. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div class="modal" id="history-modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">История создания</h2>
+            <p class="modal__text">Челябинский Военный Округ был создан 15 марта 2025 года по указу Президента Российской Федерации в рамках реформы военно-административного деления страны.</p>
+            <p class="modal__text">Основой для формирования округа послужили дислоцированные на территории Челябинской области воинские части и соединения Центрального Военного Округа.</p>
+            <div class="modal__actions">
+                <button class="btn modal__btn">Документы</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="commander-modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">Командующий округом</h2>
+            <p class="modal__text">Генерал-лейтенант Иванов Алексей Владимирович родился 12 мая 1975 года в Москве.</p>
+            <p class="modal__text">Окончил Московское высшее общевойсковое командное училище, Военную академию Генерального штаба Вооружённых Сил Российской Федерации.</p>
+            <p class="modal__text">Участник боевых действий в Сирии. Награждён орденом Мужества, орденом "За военные заслуги".</p>
+            <div class="modal__actions">
+                <button class="btn modal__btn">Награды</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="deputy-modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">Заместитель командующего</h2>
+            <p class="modal__text">Генерал-майор Петров Сергей Иванович родился 3 июля 1980 года в Челябинске.</p>
+            <p class="modal__text">Окончил Челябинское высшее танковое командное училище, Общевойсковую академию Вооружённых Сил Российской Федерации.</p>
+            <p class="modal__text">Специалист в области бронетанковой техники. Награждён орденом "За службу Родине в Вооружённых Силах СССР" III степени.</p>
+            <div class="modal__actions">
+                <button class="btn modal__btn">Публикации</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
