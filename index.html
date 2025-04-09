@@ -1,11 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Военный округ | Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russia&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHptMCA0NDhjLTExMC41IDAtMjAwLTg5LjUtMjAwLTIwMFMxNDUuNSA1NiAyNTYgNTZzMjAwIDg5LjUgMjAwIDIwMC04OS41IDIwMC0yMDAgMjAwem0xMTEuOC0zMTguOUwtMjQ2IDM5Ni44bC0yMi4yLTIyLjIgMTU0LjItMTU0LjIgMTU0LjIgMTU0LjItMjIuMiAyMi4yLTkzLjYtOTMuNnoiLz48L3N2Zz4=" alt="Логотип">
+                    <span>Военный округ</span>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link active">Главная</a>
+                    <a href="about.html" class="nav__link">О нас</a>
+                    <a href="services.html" class="nav__link">Услуги</a>
+                    <a href="news.html" class="nav__link">Новости</a>
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                </nav>
+                <button class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Челябинский Военный Округ 2025</h1>
+                <p class="hero__text">Обеспечиваем безопасность и обороноспособность региона с 2025 года</p>
+                <button class="btn hero__btn" data-modal="about-modal">Подробнее</button>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Наши преимущества</h2>
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🛡️</div>
+                        <h3 class="feature-card__title">Защита</h3>
+                        <p class="feature-card__text">Надежная защита территории и населения</p>
+                        <button class="btn feature-card__btn" data-modal="protection-modal">Узнать больше</button>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">⚔️</div>
+                        <h3 class="feature-card__title">Подготовка</h3>
+                        <p class="feature-card__text">Профессиональная подготовка военных кадров</p>
+                        <button class="btn feature-card__btn" data-modal="training-modal">Узнать больше</button>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🔧</div>
+                        <h3 class="feature-card__title">Техника</h3>
+                        <p class="feature-card__text">Современное вооружение и техника</p>
+                        <button class="btn feature-card__btn" data-modal="tech-modal">Узнать больше</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <h4 class="footer__title">Военный округ</h4>
+                    <p class="footer__text">Челябинск, 2025</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Контакты</h4>
+                    <p class="footer__text">+7 (351) 123-45-67</p>
+                    <p class="footer__text">info@voenokrug.ru</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Навигация</h4>
+                    <a href="index.html" class="footer__link">Главная</a>
+                    <a href="about.html" class="footer__link">О нас</a>
+                    <a href="services.html" class="footer__link">Услуги</a>
+                    <a href="news.html" class="footer__link">Новости</a>
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                © 2025 Челябинский Военный Округ. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div class="modal" id="about-modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">О Челябинском Военном Округе</h2>
+            <p class="modal__text">Челябинский Военный Округ был образован в 2025 году для укрепления обороноспособности региона. Наша миссия - обеспечение безопасности граждан и территориальной целостности.</p>
+            <p class="modal__text">В состав округа входят подразделения сухопутных войск, военно-воздушных сил и войск противовоздушной обороны.</p>
+            <div class="modal__actions">
+                <button class="btn modal__btn">Подробнее</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="protection-modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">Система защиты</h2>
+            <p class="modal__text">Наша система защиты включает:</p>
+            <ul class="modal__list">
+                <li>Круглосуточное патрулирование границ округа</li>
+                <li>Современные системы радиолокационного обнаружения</li>
+                <li>Автоматизированные системы управления войсками</li>
+                <li>Готовность к немедленному реагированию</li>
+            </ul>
+            <div class="modal__actions">
+                <button class="btn modal__btn">Запросить консультацию</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="training-modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">Подготовка кадров</h2>
+            <p class="modal__text">Наши учебные центры предлагают:</p>
+            <ul class="modal__list">
+                <li>Базовую военную подготовку</li>
+                <li>Специализированные курсы для офицеров</li>
+                <li>Тренировки с использованием VR-технологий</li>
+                <li>Совместные учения с другими округами</li>
+            </ul>
+            <div class="modal__actions">
+                <button class="btn modal__btn">Записаться</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="tech-modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">Военная техника</h2>
+            <p class="modal__text">На вооружении округа:</p>
+            <ul class="modal__list">
+                <li>Танки Т-14 "Армата"</li>
+                <li>БМП "Курганец-25"</li>
+                <li>Истребители Су-57</li>
+                <li>Зенитные ракетные системы С-500</li>
+                <li>Беспилотные летательные аппараты</li>
+            </ul>
+            <div class="modal__actions">
+                <button class="btn modal__btn">Технические характеристики</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
